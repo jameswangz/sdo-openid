@@ -1,0 +1,37 @@
+TestServer:
+
+	tomcat:
+		internet 114.80.135.87
+		intranet 10.129.129.115
+		ssh port 58422
+		username/password tomcat/tomcat
+		userName/eKey	  employeeNo/密宝  002787/联系吴懿昕
+
+	mysql:
+		internet 114.80.135.69 
+		intranet 10.129.129.104
+		ssh port 58422
+		username/password	root/.F9Hv,cCig_9FGUJ
+		mysql -uroot -p123qwe
+		
+ProductServer:
+
+	Gateway:
+		internet 61.172.251.210	
+		ssh port 58422
+		username james
+		ssh -p 58422 james@61.172.251.210
+	
+	tomcat1:
+		intranet 10.129.67.61
+		ssh port 58422
+		username root
+		ssh -p 58422 root@10.129.67.61
+		path /usr/local/tomcat
+
+	tomcat2:
+		intranet 10.129.67.62
+		ssh port 58422
+		username root
+		ssh -p 58422 root@10.129.67.62
+		path /usr/local/tomcat
